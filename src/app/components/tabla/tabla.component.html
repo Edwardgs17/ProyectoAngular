@@ -1,0 +1,21 @@
+<table border=1>
+    <tr>
+        <th>nombre</th><th>Apellido</th>    
+    </tr>
+    <tr *ngFor="let cliente of clientes;">
+        <td>{{cliente.split(' ')[0]}}</td>
+        <td>{{cliente.split(' ')[1]}}</td>
+    </tr>
+
+</table>
+<br>
+<table border=1>
+    <tr>
+        <th>nombre</th><th>Apellido</th>    
+    </tr>
+    <tr *ngFor="let datos of clientesTienda;">
+        <td>{{datos.nombre}}</td>
+        <td>{{datos.apellido}}</td>
+    </tr>
+
+</table>

@@ -1,0 +1,66 @@
+<div class="container-fluid" >
+<h1>Estrenos</h1>
+    <div class="row">
+      <div class="col-lg-2"  style="background-color:#aaa">              
+            
+    </div>
+      <div class="col-lg-4"  style="background-color:#aaa">
+        <h1>Rapidos y Furiosos</h1> 
+        <img src="../assets/imagenes/RapidosYFurioso.jpg" class="img-fluid " alt="Responsive image">
+      </div>
+      <div class="col-lg-4"  style="background-color:#aaa">
+        <h1>Its II</h1> 
+        <img src="../assets/imagenes/ii2.jpg" class="img-fluid " alt="Responsive image">
+      </div>
+      <div class="col-lg-2"  style="background-color:#aaa">              
+            
+      </div>
+    </div>
+   
+
+    <div class="row">
+        <div class="col-lg-2"  style="background-color:#aaa">              
+            
+        </div>
+        <div class="col-lg-4"  style="background-color:#aaa">
+            <div class="card" style="width: 26rem;" id="card1">
+                <div class="card-body">
+                  <h5 class="card-title">Rapidos y Furiosos</h5>
+                  <p class="card-text">Desde que Hulking Lawman Hobbs (Johnson), un agente leal del Servicio de Seguridad Diplomático de Estados Unidos, y Shaw (Statham), un ex agente de militar británico, se enfrentaron en Rápidos y Furiosos 7 (2015), el dúo ha intercambiado diversas peleas en un intento por acabar con el otro.</p>
+
+                        <p *ngIf="estado">Brixton (Idris Elba), un hombre genéticamente modificado, encuentra una amenaza biológica – que podría alterar al mundo por completo – y a su vez conoce a una brillante agente del MI6 (Vanessa Kirby, The Crown), – hermana de Shaw – con quien deberá, en conjunto destruir al único hombre que podría ser aún más perverso que ellos.
+                        
+                        Las explosiones de Hobbs y Shaw abrirán una nueva puerta en el universo de Rápidos y Furiosos, y con ellas se acelerará la acción en el mundo entero; desde Los Ángeles hasta Londres y desde la toxicidad de Chernobyl hasta la maravillosa belleza de Samoa.</p>
+                  <a href="#card1" *ngIf="!estado" (click)="cambiarEstado()" class="btn btn-primary">ver mas...</a>
+                  <a href="#card1" *ngIf="estado" (click)="cambiarEstado()" class="btn btn-primary">ver menos.</a>
+
+                  <a [routerLink]="['/comprartiquetes']" class="btn btn-success" style="margin-left: 80px;">Comprar Tiquete</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4"  style="background-color:#aaa">
+            <div class="card" style="width: 26rem;" >
+                <div class="card-body">
+                  <h5 class="card-title">Its</h5>
+                  <p class="card-text">En el misterioso pueblo de Derry, un malvado payaso llamado 
+                      Pennywise vuelve 27 años después para atormentar a los ya adultos miembros del Club de los Perdedores, que ahora están más alejados unos de otros.</p>
+
+                  <a [routerLink]="['/comprartiquetes']" class="btn btn-success" style="margin-left: 95px;">Comprar Tiquete</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-2"  style="background-color:#aaa">              
+        
+        </div>
+        
+      </div>
+      
+
+  </div>
+
+  
+
+
+
+
+ 
